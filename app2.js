@@ -22,6 +22,6 @@ app.post('/survey', (req, res)=>{
     res.render('surveyresult', {name:nameInput, currentDate:now});
 })
 
-const PORT = process.env.PORT|| 5000;
-app.listen(PORT);
-console.log("Server is running" +PORT);
+const port = process.env.PORT|| 5000;
+app.listen(port);
+console.log("Server is running" + port);
